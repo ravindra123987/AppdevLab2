@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#44f7aa"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="215dp"
+        android:layout_height="221dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice1" />
+
+    <Button
+        android:id="@+id/spin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="35dp"
+        android:text="roll"
+        android:textSize="26sp"
+        android:backgroundTint="#ff8000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img" />
+
+
+    <TextView
+        android:id="@+id/playerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="30sp"
+        android:text="@string/player1_score"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spin" />
+
+    <TextView
+        android:id="@+id/playerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="50sp"
+        android:text="@string/player2_score"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spin" />
+
+    <TextView
+        android:id="@+id/playerOneScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42sp"
+        android:layout_marginTop="10sp"
+        android:text="0"
+        android:textSize="35sp"
+        app:layout_constraintLeft_toLeftOf="@id/playerOne"
+        app:layout_constraintTop_toBottomOf="@id/playerOne" />
+
+    <TextView
+        android:id="@+id/playerTwoScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42sp"
+        android:layout_marginTop="10sp"
+        android:text="0"
+        android:textSize="35sp"
+        app:layout_constraintLeft_toLeftOf="@id/playerTwo"
+        app:layout_constraintTop_toBottomOf="@id/playerTwo" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_marginLeft="77sp"
+        android:layout_marginBottom="30sp"
+        android:text="Clear"
+        android:backgroundTint="#ff8000"
+        android:layout_width="250dp"
+        android:textSize="26sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn: Player1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#00546c"
+        app:layout_constraintBottom_toTopOf="@id/clear"
+        app:layout_constraintLeft_toLeftOf="@id/clear"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="40sp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

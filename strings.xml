@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Dice_Roll</string>
+    <string name="player1_score">Player1</string>
+    <string name="player2_score">Player2</string>
+    <string name="spin">Spin</string>
+</resources>
